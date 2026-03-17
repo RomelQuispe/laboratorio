@@ -1,1 +1,59 @@
 /* Estilos personalizados para el Laboratorio DPW2 */
+
+/* ---- Layout principal ---- */
+body {
+    padding-top: 56px; /* espacio para la navbar fixed-top */
+    background-color: #f4f6f9;
+}
+
+#wrapper {
+    min-height: calc(100vh - 56px);
+}
+
+/* ---- Sidebar ---- */
+#sidebar {
+    width: 240px;
+    min-height: calc(100vh - 56px);
+    position: sticky;
+    top: 56px;
+    transition: width 0.25s ease, transform 0.25s ease;
+    overflow-y: auto;
+}
+
+#sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+}
+
+/* ---- Contenido principal ---- */
+#main-content {
+    min-width: 0;
+}
+
+/* ---- Responsive: ocultar sidebar en pantallas pequeñas ---- */
+@media (max-width: 767.98px) {
+    #sidebar {
+        display: none !important;
+    }
+
+    #main-content {
+        padding: 1rem !important;
+    }
+}
+
+/* ---- Cards dashboard ---- */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* ---- Formulario ---- */
+.needs-validation .form-control:focus,
+.needs-validation .form-select:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+

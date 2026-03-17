@@ -1,16 +1,10 @@
-/* Estilos personalizados para el Laboratorio DPW2 */
-
-/* ---- Layout principal ---- */
 body {
-    padding-top: 56px; /* espacio para la navbar fixed-top */
+    padding-top: 56px; 
     background-color: #f4f6f9;
 }
-
 #wrapper {
     min-height: calc(100vh - 56px);
 }
-
-/* ---- Sidebar ---- */
 #sidebar {
     width: 240px;
     min-height: calc(100vh - 56px);
@@ -29,12 +23,10 @@ body {
     font-weight: 600;
 }
 
-/* ---- Contenido principal ---- */
 #main-content {
     min-width: 0;
 }
 
-/* ---- Responsive: ocultar sidebar en pantallas pequeñas ---- */
 @media (max-width: 767.98px) {
     #sidebar {
         display: none !important;
